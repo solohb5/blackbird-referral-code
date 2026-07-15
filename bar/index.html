@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#f7f4ec">
+<meta name="robots" content="noindex">
+<meta name="apple-mobile-web-app-title" content="Blackbird Bar Card">
+<title>Blackbird — Hans's Bar Card</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #f7f4ec; color: #1a1714;
+    font-family: -apple-system, "Helvetica Neue", sans-serif;
+    line-height: 1.55; max-width: 480px; margin: 0 auto;
+    padding: 32px 20px 80px; font-size: 16px;
+  }
+  h1 { font-size: 26px; line-height: 1.2; }
+  .sub { color: #6b6052; font-size: 14px; margin-top: 6px; font-style: italic; }
+  h2 {
+    font-size: 12px; text-transform: uppercase; letter-spacing: 2px;
+    color: #9a8e76; margin: 34px 0 12px; padding-bottom: 6px;
+    border-bottom: 2px solid #1a1714;
+  }
+  .card {
+    background: #fff; border: 1px solid #e3ddd0; border-radius: 12px;
+    padding: 16px 18px; margin-bottom: 10px;
+  }
+  .card b { font-size: 16.5px; }
+  .card p { color: #4a4234; font-size: 15px; margin-top: 4px; }
+  .ask {
+    display: inline-block; background: #b0413e; color: #fff;
+    font-size: 10.5px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+    padding: 2px 8px; border-radius: 12px; margin-left: 6px; vertical-align: middle;
+  }
+  .you {
+    display: inline-block; background: #2e7d4f; color: #fff;
+    font-size: 10.5px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+    padding: 2px 8px; border-radius: 12px; margin-left: 6px; vertical-align: middle;
+  }
+  .script {
+    background: #1a1714; color: #f5f2ea; border-radius: 12px;
+    padding: 16px 18px; margin: 10px 0; font-size: 16.5px; line-height: 1.6;
+    font-family: Georgia, serif; font-style: italic;
+  }
+  .script .tag {
+    display: block; font-style: normal; font-family: -apple-system, sans-serif;
+    font-size: 10px; text-transform: uppercase; letter-spacing: 2px;
+    color: #c9a84c; margin-bottom: 6px; font-weight: 700;
+  }
+  ol.flow { list-style: none; counter-reset: n; }
+  ol.flow li {
+    counter-increment: n; background: #fff; border: 1px solid #e3ddd0;
+    border-radius: 12px; padding: 14px 16px 14px 52px; margin-bottom: 8px;
+    position: relative; font-size: 15px; color: #4a4234;
+  }
+  ol.flow li::before {
+    content: counter(n); position: absolute; left: 14px; top: 13px;
+    width: 26px; height: 26px; border-radius: 50%; background: #1a1714; color: #fff;
+    font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center;
+  }
+  ol.flow li b { color: #1a1714; font-size: 15.5px; }
+  .never { background: #f3e6e5; border: 1px solid #e0c8c6; border-radius: 12px; padding: 14px 18px; font-size: 14.5px; color: #7a3532; }
+  .never b { color: #b0413e; }
+  .footer { margin-top: 40px; text-align: center; font-size: 12px; color: #a99d86; font-style: italic; }
+</style>
+</head>
+<body>
+
+  <h1>🐦 Blackbird — Bar Card</h1>
+  <div class="sub">Everything you need behind the bar. Unknowns are marked red — those are Monica questions.</div>
+
+  <h2>The gear — what each thing is</h2>
+  <div class="card">
+    <b>The puck on the bar</b> <span class="you">guests</span>
+    <p>The check-in disc. Guest opens the Blackbird app and <b>lays their phone flat on it</b> — check-in registers by itself. No button on your side, nothing for you to do.</p>
+  </div>
+  <div class="card">
+    <b>The purple puck</b> <span class="you">you</span>
+    <p>Staff clock-in. Tap your phone on it <b>every shift</b> — Blackbird pays you $FLY just for working. Do it like clocking in: automatic habit, zero downside.</p>
+    <p style="margin-top:8px;">How do I get enrolled, and how much is it per shift? <span class="ask">Ask Monica</span></p>
+  </div>
+  <div class="card">
+    <b>The machine in the back</b>
+    <p>That's the restaurant's side of Blackbird — the house runs it, not you. You should never need to touch it for check-ins or referrals.</p>
+    <p style="margin-top:8px;">What do WE do when a guest pays their tab through the app — how does it show up on our register? <span class="ask">Ask Monica</span></p>
+  </div>
+
+  <h2>Your shift routine — 3 things, every shift</h2>
+  <ol class="flow">
+    <li><b>Clock-in tap.</b> Purple puck when you walk in. Every shift, forever.</li>
+    <li><b>Pitch 3–5 guests</b> who are already past $20 — right after a good moment, never a cold open.</li>
+    <li><b>Check your Activity tab</b> at close — see referrals land and your $FLY grow. That's the scoreboard.</li>
+  </ol>
+
+  <h2>Signing someone up — 30 seconds</h2>
+  <div class="script"><span class="tag">The line — guests past $20</span>
+    "You on Blackbird? We're on it — free 10-piece wings tonight since you're past twenty anyway. Sign up with my code, we each get $20 credit. Scan this, tap the puck right here, done."
+  </div>
+  <ol class="flow">
+    <li><b>Show your QR</b> — Photos → Favorites. They point their camera at it.</li>
+    <li><b>They install and sign up.</b> If it asks for a referral code: <b>bb-o8gwj4</b> (say: "it's on my screen right here").</li>
+    <li><b>They tap the puck NOW</b> — phone flat on the disc. Don't let them "do it later."</li>
+    <li><b>They pay the tab in the app.</b> That's the real trigger — first payment is what lands both $20s.</li>
+    <li><b>First signup of the night:</b> glance at their screen — did your code carry through automatically, or did they have to type it? Remember the answer. It decides how we build everything else.</li>
+  </ol>
+  <div class="script"><span class="tag">The anywhere line — not dining tonight</span>
+    "This app pays you $20 toward your tab at bars all over LA. Sign up with my code — we both get twenty. Use it here whenever, or anywhere on the app."
+  </div>
+
+  <h2>The wings promo — the house's, your bait</h2>
+  <div class="card">
+    <b>Free chef's-choice 10-piece wings for Blackbird users</b>
+    <p>App card says: <b>$20 minimum spend, 4 PM–2 AM</b>. Staff rings it with the <b>"BB 10 Wings Promo"</b> button. This pays you nothing directly — it's what makes the sign-up pitch land.</p>
+    <p style="margin-top:8px;">Monica said "any purchase," the app says $20 minimum — which is it? Until she confirms, pitch the $20-minimum version. <span class="ask">Ask Monica</span></p>
+  </div>
+
+  <h2>Tonight only — one-time checks</h2>
+  <ol class="flow">
+    <li><b>Read the referral Terms</b> in the app (Profile area) + the "How not to use Blackbird" FAQ. Screenshot anything about sharing codes. This unlocks stickers, cards, and the wall box.</li>
+    <li><b>Tap the guest puck yourself</b> — your own first check-in releases YOUR $20 from Monday's signup.</li>
+    <li><b>Look for "Club Pro"</b> anywhere in the app (20% off + industry-night points). If it's not there, it never launched — stop looking.</li>
+  </ol>
+
+  <h2>Never</h2>
+  <div class="never">
+    <b>Never say "cash."</b> It's $20 of dining credit at Blackbird restaurants. · <b>No self-referrals.</b> · <b>No checking in for people or puck games</b> — cooldowns + a suspension clause exist. · The clean record is the whole play: it's your job application to Blackbird.
+  </div>
+
+  <div class="footer">Hans's bar card · bb-o8gwj4 · updated July 15, 2026</div>
+
+</body>
+</html>
