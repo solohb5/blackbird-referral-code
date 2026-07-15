@@ -45,7 +45,21 @@
     <div class="code">bb-o8gwj4</div>
     <a class="btn" href="https://app.blackbird.xyz/r/bb-o8gwj4">Get $20 in $FLY free →</a>
     <div class="note">Opens Blackbird's official referral page. Works for new Blackbird members in the US.</div>
+    <div id="desktop-qr" style="display:none; margin-top:16px;">
+      <div style="font-weight:600; font-size:15px;">On a computer? Scan with your phone — it opens my referral directly:</div>
+      <div id="qr-target" style="display:inline-block; background:#fff; padding:10px; border:1.5px solid var(--line); border-radius:10px; margin-top:10px;"></div>
+      <div class="note">Blackbird is mobile-only, so the button above dead-ends on desktop. The code <strong>bb-o8gwj4</strong> also works typed in manually during signup.</div>
+    </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script>
+    // ponytail: coarse touch check is enough — QR only needs to appear where tapping the link can't work
+    if (!('ontouchstart' in window)) {
+      document.getElementById('desktop-qr').style.display = 'block';
+      new QRCode(document.getElementById('qr-target'),
+        { text: 'https://app.blackbird.xyz/r/bb-o8gwj4', width: 150, height: 150, correctLevel: QRCode.CorrectLevel.M });
+    }
+  </script>
 
   <h2>What you actually get (the exact numbers)</h2>
   <p>Blackbird's own FAQ puts it plainly:</p>
