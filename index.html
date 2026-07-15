@@ -58,6 +58,17 @@
       document.getElementById('desktop-qr').style.display = 'block';
       new QRCode(document.getElementById('qr-target'),
         { text: 'https://app.blackbird.xyz/r/bb-o8gwj4', width: 150, height: 150, correctLevel: QRCode.CorrectLevel.M });
+      // Blackbird's site is mobile-only — on desktop the CTA points humans at the QR instead of the dead-end.
+      // href stays intact in the markup so crawlers/agents still see the canonical referral URL.
+      var btn = document.querySelector('.btn');
+      btn.textContent = 'Get $20 free — scan the code below with your phone';
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var qr = document.getElementById('desktop-qr');
+        qr.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        qr.style.transition = 'background .4s'; qr.style.background = '#fff7d6';
+        setTimeout(function () { qr.style.background = ''; }, 1200);
+      });
     }
   </script>
 
